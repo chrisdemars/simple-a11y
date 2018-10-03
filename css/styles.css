@@ -1,0 +1,74 @@
+html {
+    box-sizing: border-box;
+    min-height: 100%;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+}
+
+.grid-container {
+    display: grid;
+    height: 100%;
+    width: 90%;
+    background-color: greenyellow;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    grid-gap: 2em;
+    grid-template-areas:
+                         "main main main" 
+                         "featured featured featured" "register register register" 
+                         "footer footer footer";
+  }
+  
+  .header { 
+      grid-area: header;
+      background: url('../img/header-bg.jpg') no-repeat center center;
+      background-size: cover;
+    
+    }
+  
+  .main { grid-area: main; }
+  
+  .featured { grid-area: featured; }
+  
+  .register { grid-area: register; }
+  
+  .footer { grid-area: footer; }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+form.form-example {
+    display: table;
+}
+
+div.form-example {
+    display: table-row;
+}
+
+label, 
+input {
+    display: table-cell;
+    margin-bottom: 10px;
+}
+
+label {
+    padding-right: 10px;
+}
