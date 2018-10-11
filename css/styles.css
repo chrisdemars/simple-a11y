@@ -138,9 +138,17 @@ h2 {
   padding-top: 20px;
 }
 
+.featured-copy p {
+  line-height: 1.3em;
+}
+
 .register {
   grid-area: 5 / 5 / 6 / 10;
   padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
 .register-bckgrnd {
@@ -172,6 +180,16 @@ img {
     height: 300px;
     width: 300px;
     object-fit: cover;
+    border: 10px solid black;
+}
+
+.btn {
+  background-color: #e20000;
+  padding: 10px;
+  width: 221px;
+  height: 75px;
+  font-size: 2em;
+
 }
 
 form.form-example {
@@ -179,7 +197,10 @@ form.form-example {
 }
 
 div.form-example {
-    display: table-row;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
 }
 
 label, 
