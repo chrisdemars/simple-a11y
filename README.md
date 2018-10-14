@@ -16,6 +16,12 @@ This workshop focuses on introductory wins to springboard your accessibility eff
 * Color contrast (5 mins)
 * Code/Fix colors (10 mins)
 
+### Pre-reqs
+* Node
+* npm
+* code editor
+* Latest version of Chrome
+
 ### Setup
 clone the repo to your machine OR download the the .zip
 
