@@ -19,10 +19,10 @@ This workshop focuses on introductory wins to springboard your accessibility eff
 ### Setup
 clone the repo to your machine OR download the the .zip
 
-``
+`https://github.com/chrisdemars/simple-a11y.git`
 
 cd in to the folder if you cloned it
 
-``
+`cd simple-ally`
 
 If you are using VS Code, spin up live-server or double-click the `index.html` file.
