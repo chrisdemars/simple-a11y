@@ -36,7 +36,7 @@ If you are using VS Code, spin up live-server or double-click the `index.html` f
 ### Contribute
 If you want to contribute to this repo, I am looking specifically for this to be responsive. I am leaving that open for two reasons 1.) I don't have time to make it responsive, and 2.) I would love for this to be a PR for someone participating in #Hacktoberfest.
 
-1. Fork the repo
+1. Fork the `gh-pages` repo
 2. Clone the repo to your local machine
 
 `git clone REPO NAME`
