@@ -203,6 +203,14 @@ div.form-example {
     align-items: center;
 }
 
+div.alert {
+  display:none;
+  padding: 20px;
+  background-color: lightcoral; /* Red */
+  color: white;
+  margin-bottom: 15px;
+}
+
 label, 
 input {
     display: table-cell;
