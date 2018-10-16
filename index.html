@@ -13,16 +13,34 @@
     <div class='grid-container'>
         <div class='header-bckgrnd'></div>
         <header class='header'>
+            <a href="#main-menu" class="menu-toggle" role="button" id="main-menu-toggle" aria-expanded="false" aria-controls="main-menu"
+                aria-label="Open main menu">
+                <span class="sr-only">Open main menu</span>
+                <span class="fa fa-bars" aria-hidden="true"></span>
+            </a>
             <div class="logo">
-            <h1>Horror House</h1>
-        </div>
-            <nav class="navigation">
+                <h1>Horror House</h1>
+            </div>
+            <nav
+                id="main-menu"
+                class="navigation"
+                role="navigation"
+                aria-expanded="false"
+                aria-label="Main menu">
+
+                <a href="#main-menu-toggle" class="menu-close" role="button" id="main-menu-close" aria-expanded="false" aria-controls="main-menu"
+                    aria-label="Close main menu">
+                    <span class="sr-only">Close main menu</span>
+                    <span class="fa fa-times" aria-hidden="true"></span>
+                </a>
+
                 <ul>
-                    <li><a href="#">ABOUT</a></li>
-                    <li><a href="#">LOCATION</a></li>
-                    <li><a href="#">REGISTER</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Location</a></li>
+                    <li><a href="#">Register</a></li>
                 </ul>
             </nav>
+            <a href="#main-menu-toggle" class="backdrop" tabindex="-1" aria-hidden="true" hidden></a>
         </header>
         <div class='main-bckgrnd'></div>
         <section class='main'>
