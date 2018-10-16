@@ -63,6 +63,10 @@ h2 {
   margin-right: 20px;
 }
 
+.navigation li:last-child {
+  margin-right: 0;
+}
+
 .main {
   grid-area: 2 / 3 / 3 / 12;
   height: 50vh;
@@ -96,7 +100,7 @@ h2 {
 }
 
 .blurb {
-  grid-area: 3 / 3 / 3 / 12;
+  grid-area: 3 / 2 / 3 / 13;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -111,6 +115,13 @@ h2 {
   grid-area: 3 / 1 / 4 / 14;
 }
 
+.features {
+  grid-area: 4 / 2 / 5 / 13;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
 .feature1,
 .feature2,
 .feature3 {
@@ -122,18 +133,6 @@ h2 {
   padding: 50px 10px;
 }
 
-.feature1 {
-  grid-area: 4 / 3 / 5 / 6;
-}
-
-.feature2 {
-  grid-area: 4 / 6 / 5 / 9;
-}
-
-.feature3 {
-  grid-area: 4 / 9 / 5 / 12;
-}
-
 .featured-copy {
   padding-top: 20px;
 }
@@ -143,7 +142,7 @@ h2 {
 }
 
 .register {
-  grid-area: 5 / 5 / 6 / 10;
+  grid-area: 5 / 3 / 6 / 12;
   padding: 20px;
   display: flex;
   justify-content: center;
@@ -172,15 +171,24 @@ h2 {
   display: inline;
 }
 
+.footer li:not(:last-child) {
+  margin-right: 1rem;
+}
+
 a {
   color: black;
 }
-  
+
 img {
     height: 300px;
     width: 300px;
+    max-width: 100%;
     object-fit: cover;
     border: 10px solid black;
+}
+
+.main-image {
+  min-width: 300px;
 }
 
 .btn {
@@ -203,7 +211,7 @@ div.form-example {
     align-items: center;
 }
 
-label, 
+label,
 input {
     display: table-cell;
     margin-bottom: 10px;
@@ -243,4 +251,63 @@ h3,
   transform: rotate(8deg);
   right: 10px;
   left: auto;
+}
+
+@media only screen and (max-width: 1032px) {
+  .header {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .main {
+    height: auto;
+  }
+
+  .main h1 {
+    margin-bottom: 2rem;
+  }
+
+  .blurb {
+    flex-direction: column;
+  }
+
+  .main-copy {
+    margin-left: 0;
+    margin-top: 2rem;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .grid-container {
+    grid-column-gap: 20px;
+  }
+
+  .features {
+    flex-direction: column;
+  }
+
+  .feature1,
+  .feature2,
+  .feature3 {
+    flex-direction: row;
+    padding: 0;
+    margin-bottom: 2rem;
+  }
+
+  .featured-image {
+    margin-right: 1rem;
+  }
+
+  .featured-image img {
+    min-width: 200px;
+  }
+
+  .featured-copy {
+    text-align: left;
+  }
+
+  .footer {
+    flex-direction: column;
+    text-align: center;
+  }
 }
