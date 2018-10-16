@@ -15,7 +15,6 @@ html,
 body {
   margin: 0;
   height: 100%;
-  /* background-color: black; */
   font-family: Arial, Helvetica, sans-serif;
   color: black;
 }
@@ -37,6 +36,16 @@ body {
 
 .grid-container {
   display: grid;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.header {
+  display: flex;
+}
+
+.logo {
+  font-size: 0.75rem;
 }
 
 .menu-toggle {
@@ -45,6 +54,7 @@ body {
   line-height: 1em;
   font-size: 1em;
   color: #333;
+  margin-right: 25px;
 }
 
 .menu-toggle:hover,
@@ -136,11 +146,12 @@ h2 {
   line-height: 1.5em;
   font-size: 1.3em;
   padding: 20px 0;
+  text-align: center;
 }
 
 .main h1,
 .main h2 {
-  font-size: 2.3em;
+  font-size: 1.5em;
   line-height: 1.3em;
   text-shadow: 0 0 0.5em #fff, 0 0 0.5em #fff, 0 0 0.5em #fff;
 }
@@ -155,6 +166,10 @@ h2 {
 .blurb {
   line-height: 1.5em;
   font-size: 1.3em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 15px;
 }
 
 
@@ -166,6 +181,7 @@ h2 {
   align-items: center;
   justify-content: center;
   text-align: center;
+  margin: 15px;
 }
 
 
@@ -187,14 +203,26 @@ h2 {
 
 .footer {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   align-items: center;
   justify-content: space-between;
   width: 100%;
 }
 
+.footer__copyright {
+  text-align: center;
+}
+
+.footer__social ul {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
 .footer li {
   display: inline;
+  margin: 0 15px;
+  font-size: 20px;
 }
 
 a {
@@ -266,6 +294,7 @@ h3,
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    align-self: flex-end;
   }
 
   .navigation li {
@@ -320,18 +349,6 @@ h3,
     grid-area: 1 / 1 / 2 / 14;
   }
 
-  /* .navigation {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .navigation li {
-    display: inline;
-    margin-right: 20px;
-  } */
-
   .main {
     grid-area: 2 / 3 / 3 / 12;
     height: 50vh;
@@ -343,6 +360,10 @@ h3,
     text-align: center;
   }
 
+  .main h1,
+  .main h2 {
+    font-size: 2.3em;
+  }
   .main-copy {
     margin-left: 50px;
   }
