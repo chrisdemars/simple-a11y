@@ -41,7 +41,7 @@ If you want to contribute to this repo, I am looking specifically for this to be
 
 `git clone REPO NAME`
 
-3. Make changes in a feature branch
+3. Make changes in a feature branch. *Please use accessible, semantic markup.*
 
 `yourname/feature-responsive`
 
