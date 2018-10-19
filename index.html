@@ -1,97 +1,140 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/css?family=Nosifer" rel="stylesheet">
-    <link rel="stylesheet" href="css/styles.css">
-    <title>Rea11y Simple A11y: A Focused Workshop!</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <script type="text/javascript" src="js/app.js"></script>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=Nosifer" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.2/css/bulma.min.css" integrity="sha256-2pUeJf+y0ltRPSbKOeJh09ipQFYxUdct5nTY6GAXswA=" crossorigin="anonymous" />
+  <link rel="stylesheet" href="css/styles.css">
+  <meta property="og:title" content="Rea11y Simple A11y: A Focused Workshop!" />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="img/header-bg.jpg" />
+  <title>Rea11y Simple A11y: A Focused Workshop!</title>
 </head>
+
 <body>
-    <div class='grid-container'>
-        <div class='header-bckgrnd'></div>
-        <header class='header'>
-            <div class="logo">
-            <h1>Horror House</h1>
-        </div>
-            <nav class="navigation">
-                <ul>
-                    <li><a href="#">ABOUT</a></li>
-                    <li><a href="#">LOCATION</a></li>
-                    <li><a href="#">REGISTER</a></li>
-                </ul>
-            </nav>
-        </header>
-        <div class='main-bckgrnd'></div>
-        <section class='main'>
-            <h1>Horror House</h1>
-            <h2>Unlike anything you have seen before!</h2>
-        </section>
-        <div class='blurb-bckgrnd'></div>
-        <section class='blurb'>
-            <div class="main-image effect5">
-                <img src="img/featured-1.jpeg" alt="">
-            </div>
-            <div class="main-copy">
-                <p>Blood ashes tearing in drowning spooky at fanatic with murderer. In the deranged Halloween slice. Blood ashes tearing in drowning spooky at fanatic with murderer. Mental hospital sliced drowning. Buried non guts claw and creature hair-raising decapitated
-                at est. . Breathing heavily hell and rabid anthrax fanatic tearing at a squeal. Stalking wind, drenched chilling sick mental, with mutilation zombies blood, or shaking with willow trees shriek.</p>
-            </div>
-        </section>
-        <section class='feature1'>
-            <div class="featured-image effect5">
-                <img src="img/featured-2.JPG" alt="">
-            </div>
-            <div class="featured-copy">
-                <p>Blood ashes tearing in drowning spooky at fanatic with murderer. In the deranged Halloween slice. Blood ashes tearing in drowning spooky at fanatic with murderer. Mental hospital sliced drowning.</p>
-            </div>
-        </section>
-        <section class='feature2'>
-            <div class="featured-image effect5">
-                <img src="img/featured-3.jpeg" alt="">
-            </div>
-            <div class="featured-copy">
-                <p>Blood ashes tearing in drowning spooky at fanatic with murderer. In the deranged Halloween slice. Blood ashes tearing in drowning spooky at fanatic with murderer. Mental hospital sliced drowning.</p>
-            </div>
-        </section>
-        <section class='feature3'>
-            <div class="featured-image effect5">
-                <img src="img/featured-4.jpg" alt="">
-            </div>
-            <div class="featured-copy">
-                <p>Blood ashes tearing in drowning spooky at fanatic with murderer. In the deranged Halloween slice. Blood ashes tearing in drowning spooky at fanatic with murderer. Mental hospital sliced drowning.</p>
-            </div>
-        </section>
-        <div class='register-bckgrnd'></div>
-        <section class='register'>
-            <form action="" method="get" class="form-example">
-                <div class="form-example">
-                    <label for="name">Enter your name: </label>
-                    <input type="text" name="name" id="name" required>
-                </div>
-                <div class="form-example">
-                    <label for="email">Enter your email: </label>
-                    <input type="email" name="email" id="email" required>
-                </div>
-                <div class="form-example">
-                    <button type="submit" value="Submit" class="btn">Register</button>
-                </div>
-            </form>
-        </section>
-        <div class='footer-bckgrnd'></div>
-        <footer class='footer'>
-            <div>
-                Copyright &copy; 2018 | Horror House
-            </div>
-            <div>
-                <ul>
-                    <li><a href="#"><i class="fab fa-twitter" aria-label="Twitter"></a></i></li>
-                    <li><a href="#"><i class="fab fa-instagram" aria-label="Instagram"></a></i></li>
-                    <li><a href="#"><i class="fab fa-facebook-f" aria-label="Facebook"></a></i></li>
-                </ul>
-            </div>
-        </footer>
+  <nav class="navbar container" role="navigation" aria-label="main navigation">
+    <header role="banner" class="navbar-brand is-marginless nosiferText title is-size-2-tablet is-size-4-mobile">
+      <h1 class="navbar-item"><a href="#">Horror House</a></h1>
+
+      <!-- Hamburger menu for mobile. Same number of spans as menu items -->
+      <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navMenu">
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+      </a>
+    </header>
+
+    <div id="navMenu" class="navbar-menu">
+      <div class="navbar-end has-text-centered nosiferText textRed subtitle is-4">
+        <a class="navbar-item" href="#">ABOUT</a>
+        <a class="navbar-item" href="#">LOCATION</a>
+        <a class="navbar-item" href="#">REGISTER</a>
+      </div>
     </div>
+  </nav>
+
+  <section class="hero main-bckgrnd">
+    <div class="main-bckgrnd hero-body container nosiferText shadowText has-text-centered">
+      <h1 class="main-title title">Horror House</h1>
+      <h2 class="main-subtitle title">Unlike anything you have seen before!</h2>
+    </div>
+  </section>
+
+  <main role="main">
+    <section class="section columns is-mobile is-centered is-vcentered is-multiline">
+      <div class="column is-2-widescreen is-3-desktop is-4-tablet is-5-mobile">
+        <figure class="image is-square effect5">
+          <img src="img/featured-1.jpeg" alt="">
+        </figure>
+      </div>
+      <div class="column is-5-widescreen is-6-desktop is-7-tablet is-12-mobile main-copy">
+        <p class="content is-size-4">Blood ashes tearing in drowning spooky at fanatic with murderer. In the deranged Halloween slice. Blood ashes tearing in drowning spooky at fanatic with murderer. Mental hospital sliced drowning. Buried non guts
+          claw and creature hair-raising decapitated at est. . Breathing heavily hell and rabid anthrax fanatic tearing at a squeal. Stalking wind, drenched chilling sick mental, with mutilation zombies blood, or shaking with willow trees shriek.</p>
+      </div>
+    </section>
+
+    <section class="section container is-vcentered is-multiline featuredContent">
+      <div class="columns">
+        <div class="column">
+          <figure class="image is-square effect5">
+            <img src="img/featured-2.JPG" alt="">
+          </figure>
+          <div>
+            <p class="content is-size-4">Blood ashes tearing in drowning spooky at fanatic with murderer. In the deranged Halloween slice. Blood ashes tearing in drowning spooky at fanatic with murderer. Mental hospital sliced drowning.</p>
+          </div>
+        </div>
+        <div class="column">
+          <figure class="image is-square effect5">
+            <img src="img/featured-3.jpeg" alt="">
+          </figure>
+          <p class="content is-size-4">Blood ashes tearing in drowning spooky at fanatic with murderer. In the deranged Halloween slice. Blood ashes tearing in drowning spooky at fanatic with murderer. Mental hospital sliced drowning.</p>
+        </div>
+        <div class="column">
+          <figure class="image is-square effect5">
+            <img src="img/featured-4.jpg" alt="">
+          </figure>
+          <p class="content is-size-4">Blood ashes tearing in drowning spooky at fanatic with murderer. In the deranged Halloween slice. Blood ashes tearing in drowning spooky at fanatic with murderer. Mental hospital sliced drowning.</p>
+        </div>
+      </div>
+    </section>
+
+    <form role="form" action="" method="get" class="register section columns is-tablet is-centered">
+      <div class="column columns is-7-desktop is-11-tablet is-centered is-vcentered">
+        <div class="registerCTA column is-half-tablet nosiferText shadowText textBlack has-text-black">
+          <h2 class="is-size-1 title has-text-centered has-text-right-tablet">Be the first to know</h2>
+        </div>
+        <div class="registerForm column is-half-tablet">
+          <div class="field">
+            <label for="name" class="label is-large">Enter your name: </label>
+            <div class="control has-icons-left">
+              <input class="input is-large" type="text" name="name" id="name" required placeholder="First Last">
+              <span class="icon is-small is-left">
+                <i class="fas fa-user"></i>
+              </span>
+            </div>
+          </div>
+          <div class="field">
+            <label for="email" class="label is-large">Enter your email: </label>
+            <div class="control has-icons-left">
+              <input class="input is-large" type="email" name="email" id="email" required placeholder="you@example.com">
+              <span class="icon is-small is-left">
+                <i class="fas fa-envelope"></i>
+              </span>
+            </div>
+          </div>
+          <div class="field">
+            <div class="control">
+              <button class="button is-large">Register</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </form>
+  </main>
+  <footer role="contentinfo" class="section level">
+    <div class="level-left has-text-centered">
+      <p class="content nosiferText is-size-5-tablet has-text-black">
+        Copyright &copy; 2018 | Horror House
+      </p>
+    </div>
+    <div class="level-right has-text-centered">
+      <span class="icon is-large has-text-black">
+        <i class="fab fa-2x fa-twitter" aria-label="Twitter"><a href="#"></a></i>
+      </span>
+      <span class="icon is-large has-text-black">
+        <i class="fab fa-2x fa-instagram" aria-label="Instagram"><a href="#"></a></i>
+      </span>
+      <span class="icon is-large has-text-black">
+        <i class="fab fa-2x fa-facebook-f" aria-label="Facebook"><a href="#"></a></i>
+      </span>
+    </div>
+  </footer>
+
 </body>
+
 </html>
