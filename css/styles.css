@@ -138,6 +138,42 @@ img {
     border-left: 5px dashed black;
   }
 
+div.form-example {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+div.alert {
+  display:none;
+  padding: 20px;
+  background-color: lightcoral; /* Red */
+  color: white;
+  margin-bottom: 15px;
+}
+
+label, 
+input {
+    display: table-cell;
+    margin-bottom: 10px;
+}
+
+label {
+    padding-right: 10px;
+}
+
+h1,
+h2,
+h3,
+.header a {
+  color: #e20000;
+  text-transform: uppercase;
+}
+.effect5 {
+  position: relative;
+}
+
   .registerCTA {
     padding-right: 3rem;
   }
