@@ -10,10 +10,7 @@
   <link href="https://fonts.googleapis.com/css?family=Nosifer" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.2/css/bulma.min.css" integrity="sha256-2pUeJf+y0ltRPSbKOeJh09ipQFYxUdct5nTY6GAXswA=" crossorigin="anonymous" />
   <link rel="stylesheet" href="css/styles.css">
-  <meta property="og:title" content="Rea11y Simple A11y: A Focused Workshop!" />
-  <meta property="og:type" content="website" />
-  <meta property="og:image" content="img/header-bg.jpg" />
-  <title>Rea11y Simple A11y: A Focused Workshop!</title>
+  <title>Rea11y Simple A11y: A Focused Accessibility Workshop!</title>
 </head>
 
 <body>
@@ -69,29 +66,11 @@
             <p class="content is-size-4">Blood ashes tearing in drowning spooky at fanatic with murderer. In the deranged Halloween slice. Blood ashes tearing in drowning spooky at fanatic with murderer. Mental hospital sliced drowning.</p>
           </div>
 
-    <script type="application/javascript">
-        var register_submit = function() {
-            var submit_button = document.getElementById("submit");
-            submit_button.disabled = true;
-            var message = "";
-            message += "Could not register: ";
-            message += document.getElementById("name").value;
-            var alert_box = document.getElementById("register-alert");
-            var alert_box_message = document.getElementById("register-alert-message");
-            alert_box_message.innerText += message;
-            alert_box.style.display = "block";
-            setTimeout(function(){
-                alert_box_message.innerText = "";
-                alert_box.style.display = "none";
-                submit_button.disabled = false;
-            }, 3000);
-        }
-    </script>
-    <div class='grid-container'>
+    <!-- <div class='grid-container'>
         <div class='header-bckgrnd'></div>
         <header class='header'>
             <div class="logo">
-            <h1>Horror House</h1>
+            <h1>Horror House</h1> -->
 
         </div>
         <div class="column">
@@ -132,43 +111,12 @@
               <span class="icon is-small is-left">
                 <i class="fas fa-envelope"></i>
               </span>
+            </form>
 
         </section>
         <div class='register-bckgrnd'></div>
-        <section class='register'>
-            <div class="alert" id="register-alert">
-                <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
-                <span id="register-alert-message"></span>
-            </div>
-            <form onSubmit="register_submit();return false;" class="form-example" id="register">
-                <div class="form-example">
-                    <label for="name">Enter your name: </label>
-                    <input type="text" name="name" id="name" required>
-                </div>
-                <div class="form-example">
-                    <label for="email">Enter your email: </label>
-                    <input type="email" name="email" id="email" required>
-                </div>
-                <div class="form-example">
-                    <button type="submit" value="Submit" class="btn" id="submit">Register</button>
-                </div>
-            </form>
-        </section>
-        <div class='footer-bckgrnd'></div>
-        <footer class='footer'>
-            <div>
-                Copyright &copy; 2018 | Horror House
-            </div>
-          </div>
-          <div class="field">
-            <div class="control">
-              <button class="button is-large">Register</button>
-            </div>
-          </div>
-        </div>
-      </div>
-    </form>
   </main>
+
   <footer role="contentinfo" class="section level">
     <div class="level-left has-text-centered">
       <p class="content nosiferText is-size-5-tablet has-text-black">
@@ -177,16 +125,35 @@
     </div>
     <div class="level-right has-text-centered">
       <span class="icon is-large has-text-black">
-        <i class="fab fa-2x fa-twitter" aria-label="Twitter"><a href="#"></a></i>
+        <a href="#"><i class="fab fa-2x fa-twitter" aria-label="Twitter"></i></a>
       </span>
       <span class="icon is-large has-text-black">
-        <i class="fab fa-2x fa-instagram" aria-label="Instagram"><a href="#"></a></i>
+        <a href="#"><i class="fab fa-2x fa-instagram" aria-label="Instagram"></i></a>
       </span>
       <span class="icon is-large has-text-black">
-        <i class="fab fa-2x fa-facebook-f" aria-label="Facebook"><a href="#"></a></i>
+        <a href="#"><i class="fab fa-2x fa-facebook-f" aria-label="Facebook"></i></a>
       </span>
     </div>
   </footer>
+
+  <script type="application/javascript">
+    var register_submit = function() {
+        var submit_button = document.getElementById("submit");
+        submit_button.disabled = true;
+        var message = "";
+        message += "Could not register: ";
+        message += document.getElementById("name").value;
+        var alert_box = document.getElementById("register-alert");
+        var alert_box_message = document.getElementById("register-alert-message");
+        alert_box_message.innerText += message;
+        alert_box.style.display = "block";
+        setTimeout(function(){
+            alert_box_message.innerText = "";
+            alert_box.style.display = "none";
+            submit_button.disabled = false;
+        }, 3000);
+    }
+</script>
 
 </body>
 
