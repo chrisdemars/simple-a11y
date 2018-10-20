@@ -59,7 +59,7 @@ a {
 
 /* Images and Backgrounds */
 .main-bckgrnd {
-  background: url('../../img/header-bg.jpg') center center no-repeat;
+  background: url('../img/header-bg.jpg') center center no-repeat;
   background-size: cover;
   min-height: 50vh;
 }
@@ -110,7 +110,7 @@ img {
 
 /* Registration Form */
 .register {
-  background: url('../../img/bloodBottom.png') center center no-repeat;
+  background: url('../img/bloodBottom.png') center center no-repeat;
   background-size: cover;
   min-height: 50vh;
   padding: 3rem;
