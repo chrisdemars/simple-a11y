@@ -17,6 +17,7 @@
 </head>
 
 <body>
+
   <nav class="navbar container" role="navigation" aria-label="main navigation">
     <header role="banner" class="navbar-brand is-marginless nosiferText title is-size-2-tablet is-size-4-mobile">
       <h1 class="navbar-item"><a href="#">Horror House</a></h1>
@@ -67,6 +68,31 @@
           <div>
             <p class="content is-size-4">Blood ashes tearing in drowning spooky at fanatic with murderer. In the deranged Halloween slice. Blood ashes tearing in drowning spooky at fanatic with murderer. Mental hospital sliced drowning.</p>
           </div>
+
+    <script type="application/javascript">
+        var register_submit = function() {
+            var submit_button = document.getElementById("submit");
+            submit_button.disabled = true;
+            var message = "";
+            message += "Could not register: ";
+            message += document.getElementById("name").value;
+            var alert_box = document.getElementById("register-alert");
+            var alert_box_message = document.getElementById("register-alert-message");
+            alert_box_message.innerText += message;
+            alert_box.style.display = "block";
+            setTimeout(function(){
+                alert_box_message.innerText = "";
+                alert_box.style.display = "none";
+                submit_button.disabled = false;
+            }, 3000);
+        }
+    </script>
+    <div class='grid-container'>
+        <div class='header-bckgrnd'></div>
+        <header class='header'>
+            <div class="logo">
+            <h1>Horror House</h1>
+
         </div>
         <div class="column">
           <figure class="image is-square effect5">
@@ -97,6 +123,7 @@
                 <i class="fas fa-user"></i>
               </span>
             </div>
+
           </div>
           <div class="field">
             <label for="email" class="label is-large">Enter your email: </label>
@@ -105,6 +132,32 @@
               <span class="icon is-small is-left">
                 <i class="fas fa-envelope"></i>
               </span>
+
+        </section>
+        <div class='register-bckgrnd'></div>
+        <section class='register'>
+            <div class="alert" id="register-alert">
+                <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
+                <span id="register-alert-message"></span>
+            </div>
+            <form onSubmit="register_submit();return false;" class="form-example" id="register">
+                <div class="form-example">
+                    <label for="name">Enter your name: </label>
+                    <input type="text" name="name" id="name" required>
+                </div>
+                <div class="form-example">
+                    <label for="email">Enter your email: </label>
+                    <input type="email" name="email" id="email" required>
+                </div>
+                <div class="form-example">
+                    <button type="submit" value="Submit" class="btn" id="submit">Register</button>
+                </div>
+            </form>
+        </section>
+        <div class='footer-bckgrnd'></div>
+        <footer class='footer'>
+            <div>
+                Copyright &copy; 2018 | Horror House
             </div>
           </div>
           <div class="field">
