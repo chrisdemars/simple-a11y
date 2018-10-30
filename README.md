@@ -21,6 +21,7 @@ This workshop focuses on introductory wins to springboard your accessibility eff
 * npm
 * code editor
 * Latest version of Chrome
+* aXe Core Chrome extension
 
 ### Setup
 clone the repo to your machine OR download the the .zip
