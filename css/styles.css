@@ -20,7 +20,7 @@ h1,
 h2,
 h3,
 .header a {
-  color: #e20000;
+  color: #ff6060;
   text-transform: uppercase;
 }
 
@@ -33,7 +33,7 @@ a {
 .nosiferText h1,
 .nosiferText h2 {
   font-family: 'Nosifer', cursive;
-  color: #e20000;
+  color: #ff6060;
   text-transform: uppercase;
 }
 
@@ -128,7 +128,7 @@ img {
 }
 
 .register button:hover {
-  background-color: #e20000;
+  background-color: #ff6060;
   border: 1px solid #b40000;
   color: white;
 }
@@ -167,7 +167,7 @@ h1,
 h2,
 h3,
 .header a {
-  color: #e20000;
+  color: #ff6060;
   text-transform: uppercase;
 }
 .effect5 {
