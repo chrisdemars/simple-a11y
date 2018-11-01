@@ -5,7 +5,7 @@
 }
 
 a.navbar-item:hover {
-  color: #b40000;
+  color: ##e20000;
   text-decoration: underline;
 }
 
@@ -129,7 +129,7 @@ img {
 
 .register button:hover {
   background-color: #e20000;
-  border: 1px solid #b40000;
+  border: 1px solid #e20000;
   color: white;
 }
 
