@@ -1,0 +1,19 @@
+{
+  "name": "simple-a11y",
+  "version": "1.0.0",
+  "description": "Code for A11y workshop.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chrisdemars/simple-a11y.git"
+  },
+  "author": "Chris DeMars <cdemars86@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/chrisdemars/simple-a11y/issues"
+  },
+  "homepage": "https://github.com/chrisdemars/simple-a11y#readme"
+}
