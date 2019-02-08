@@ -4,7 +4,8 @@
   "description": "Code for A11y workshop.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "http-server"
   },
   "repository": {
     "type": "git",
@@ -15,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/chrisdemars/simple-a11y/issues"
   },
-  "homepage": "https://github.com/chrisdemars/simple-a11y#readme"
+  "homepage": "https://github.com/chrisdemars/simple-a11y#readme",
+  "devDependencies": {
+    "http-server": "^0.11.1"
+  }
 }
